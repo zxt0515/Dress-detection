@@ -1,23 +1,31 @@
 # Dress-detection
 TAMU CSCE 636 Prject by Xiangtian Zheng UIN 526001882
 
-Install dependencies: 
+# Install dependencies: 
+
 •	Tensorflow-gpu
+
 •	sklearn
+
 •	cv2
+
 •	numpy
+
 •	matplotlib
+
 •	argparse
+
 •	json
+
 •	os
 
 
 
-Note that trained model is saved in the folder "output", including "model.json" and "model.h5". They respectively save the keras model structure and weights.
+# Note that trained model is saved in the folder "output", including "model.json" and "model.h5". They respectively save the keras model structure and weights.
 
 
 
-##More tips on running code
+## More tips on running code
 
 Firstly please find “main.py”, which is the main body of this project. It can load data, networks and model. For the model object, it has three functions: “train”, “prediction” and “present”. The first two functions are actually training and test process, whose input can be only video segment of fixed length. The last function of “present” is to output .json and figure, given a video of arbitrary length.
 
