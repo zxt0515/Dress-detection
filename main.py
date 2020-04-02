@@ -19,7 +19,7 @@ def _arg_define():
     parser.add_argument("--present_dir", type=str, default="./example/")
     parser.add_argument("--model_saved", type=str, default="./output/model.json")
     parser.add_argument("--weight_saved", type=str, default="./output/model.h5")
-    parser.add_argument("--epoch", type=int, default=10)
+    parser.add_argument("--epoch", type=int, default=20)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--fps_standard", type=int, default=10)

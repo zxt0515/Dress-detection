@@ -42,6 +42,7 @@ class dress_detection():
         plt.plot(loss_history)
         plt.xlabel("Epochs")
         plt.ylabel("Training Loss")
+        plt.ylim(0,1)
         plt.savefig(self.hyperpara.output_dir+"training_loss.png")
         plt.close()
     
@@ -85,6 +86,7 @@ class dress_detection():
         plt.plot(t,y_predict)
         plt.xlabel("Time")
         plt.ylabel("Probability of getting dressed")
+        plt.ylim(0,1)
         plt.savefig(self.hyperpara.present_dir+json_image_save_name+".png")
         plt.close()
         return y_predict
