@@ -23,6 +23,7 @@ class dressnet():
         self.model.add(LSTM(20, return_sequences=False))
         self.model.add(Dense(1))
         self.model.add(Activation("sigmoid"))
+        print(self.model.summary())
 
 # if __name__=="__main__":
 #     network = dressnet()
