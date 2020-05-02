@@ -19,6 +19,18 @@ TAMU CSCE 636 Prject by Xiangtian Zheng UIN 526001882
 
 •	os
 
+## Command line
+
+1) download this folder:
+
+**git clone https://github.com/zxt0515/Dress-detection.git**
+
+2) Manually add test videos into "example" folder
+
+3) Run test.py
+
+**python test.py**
+
 
 ## More tips on running code
 
