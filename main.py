@@ -42,7 +42,7 @@ dress_net = dressnet(hyperpara=args)
 #create a model train and predict
 flag_train = 0 #if you have a trained model, you can turn it off
 flag_predict = 0
-flag_present = 0
+flag_present = 1
 dress_model = dress_detection(
     network = dress_net.model,
     hyperpara = args)
