@@ -42,9 +42,10 @@ for [o, a] in opts:
     if o == "--video_name":
         file = a
 
+# file = "class0_case02.mp4"
 
 #load data
-dress_data = dress_dataset(hyperpara = args)
+# dress_data = dress_dataset(hyperpara = args)
 
 #create a network
 dress_net = dressnet(hyperpara=args)
