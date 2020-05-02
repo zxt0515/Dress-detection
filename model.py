@@ -81,15 +81,15 @@ class dress_detection():
         y_predict = model.predict(x_test)
         data = np.concatenate((t.reshape((-1,1)), y_predict.reshape((-1,1))),axis=1)
         data = {"getting dressed": data}
-        # with open(self.hyperpara.present_dir+json_image_save_name+".json", "w") as write_file:
-        #     json.dump(data, write_file, cls=NumpyEncoder)
-        with open(self.hyperpara.present_dir+"timeLabel"+".json", "w") as write_file:
+        with open(self.hyperpara.present_dir+json_image_save_name+".json", "w") as write_file:
             json.dump(data, write_file, cls=NumpyEncoder)
+        # with open(self.hyperpara.present_dir+"timeLabel"+".json", "w") as write_file:
+        #     json.dump(data, write_file, cls=NumpyEncoder)
         plt.plot(t,y_predict)
         plt.xlabel("Time")
         plt.ylabel("Probability of getting dressed")
         plt.ylim(0,1)
-        # plt.savefig(self.hyperpara.present_dir+json_image_save_name+".png")
-        plt.savefig(self.hyperpara.present_dir+"timeLabel"+".jpg")
+        plt.savefig(self.hyperpara.present_dir+json_image_save_name+".png")
+        # plt.savefig(self.hyperpara.present_dir+"timeLabel"+".png")
         plt.close()
         return y_predict
