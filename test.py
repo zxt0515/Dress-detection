@@ -33,10 +33,10 @@ def _arg_define():
 args = _arg_define()
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "ho:v", ["video_name"])
+    opts, args = getopt.getopt(sys.argv[1:], "video_name")
 except getopt.GetoptError as err:
     print(err)
-    sys.exit(2)
+    # sys.exit(2)
 
 for [o, a] in opts:
     if o == "--video_name":
